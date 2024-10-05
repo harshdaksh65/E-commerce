@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import NAv from "./NAv";
+import Nav from "./Nav";
 import { Link, useLocation } from "react-router-dom";
 import { Productcontext } from "../utils/Context";
 import Loading from "./Loading";
@@ -32,7 +32,7 @@ const Home = () => {
 
   return products ? (
     <>
-      <NAv />
+      <Nav />
       <div className="w-[85%] mt-8 p-5 h-screen flex flex-wrap gap-5 overflow-x-hidden overflow-y-auto">
         {filtered &&
           filtered.map((p, i) => (
