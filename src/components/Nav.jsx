@@ -24,7 +24,7 @@ function NAv() {
           ADD PRODUCTS
         </a>
         <hr className="w-full mt-3 " />
-        <h1 className="text-xl font-semibold w-full m-auto my-2">Categories</h1>
+        <h1 className="text-xl font-semibold w-full m-auto my-2">Category</h1>
         <div className="">
           {distinct_category.map((c, i) => {
             return (
