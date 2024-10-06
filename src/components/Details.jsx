@@ -38,7 +38,7 @@ function Details() {
   };
 
   return product ? (
-    <div className="w-[80%] h-screen m-auto flex gap-4 justify-center items-center">
+    <div className="w-[80%]  h-screen m-auto flex flex-col gap-4 justify-center items-center lg:flex-row ">
       <div
         className="w-72 h-80 bg-contain bg-center bg-no-repeat"
         style={{ backgroundImage: `URL(${product.image})` }}></div>

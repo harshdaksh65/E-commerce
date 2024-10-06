@@ -32,14 +32,16 @@ const Home = () => {
 
   return products ? (
     <>
-      <Nav />
-      <div className="w-[85%] mt-8 p-5 h-screen flex flex-wrap gap-5 overflow-x-hidden overflow-y-auto">
+      <Nav/>
+      <i className="m-5 mt-6 ri-menu-line lg:hidden"></i>
+
+      <div className="w-[85%] mt-16 p-5 h-screen flex flex-wrap gap-5 overflow-x-hidden overflow-y-auto lg:mt-12">
         {filtered &&
           filtered.map((p, i) => (
             <Link
               to={`/details/${p.id}`}
               key={i}
-              className="w-44 h-60 bg-white p-2 shadow-lg hover:shadow-2xl rounded-lg overflow-hidden flex flex-col items-center">
+              className=" w-60 h-72 bg-white p-2 shadow-lg hover:shadow-2xl rounded-lg overflow-hidden flex flex-col items-center lg:w-44 h-60">
               <div
                 className="hover:scale-110 hover:ease-in-out w-full h-44 bg-contain bg-center bg-no-repeat"
                 style={{ backgroundImage: `URL(${p.image})` }}></div>

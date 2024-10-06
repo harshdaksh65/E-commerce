@@ -16,7 +16,8 @@ function NAv() {
   };
 
   return (
-    <div className="w-[15%] h-full bg-zinc-100 flex flex-col items-center pt-5">
+    <>
+    <div className="hidden lg:flex w-[15%] h-full bg-zinc-100 flex-col items-center pt-5">
       <nav>
         <a
           className="px-3 py-1 border rounded-lg border-blue-500 text-blue-600 shadow-xl"
@@ -42,6 +43,8 @@ function NAv() {
         </div>
       </nav>
     </div>
+    </>
+    
   );
 }
 
