@@ -12,21 +12,21 @@ function Details() {
 
   const { id } = useParams();
 
-  // const getproduct = async()=>{
-  //   try{
-  //     const {data} = await axios(`/products/${id}`)
-  //     setproduct(data);
-  //   }
-  //   catch(error){
-  //     console.error(error)
-  //   }
-  // }
+  const getproduct = async()=>{
+    try{
+      const {data} = await axios(`/products/${id}`)
+      setproduct(data);
+    }
+    catch(error){
+      console.error(error)
+    }
+  }
 
   useEffect(() => {
     if (!product) {
       setproduct(Product.filter((p) => p.id == id)[0]);
     }
-    // getproduct();
+    getproduct();
   }, []);
 
   const deletehandler = (id) => {

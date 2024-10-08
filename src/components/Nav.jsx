@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Productcontext } from "../utils/Context";
 
-function NAv() {
+function Nav() {
   const [products] = useContext(Productcontext);
 
   let distinct_category =
@@ -48,4 +48,4 @@ function NAv() {
   );
 }
 
-export default NAv;
+export default Nav;
